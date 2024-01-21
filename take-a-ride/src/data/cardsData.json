@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://i.ibb.co/yp7vFSK/mountain-light-blue.jpg",
+    "title": "Mountain light-blue bike",
+    "type": "mountain",
+    "agegroup": "adult",
+    "price": 65
+  },
+
+  {
+    "url": "https://i.ibb.co/vvZzt5Z/modern-black.jpg",
+    "title": "Modern black bike",
+    "type": "modern",
+    "agegroup": "adult",
+    "price": 35
+  },
+
+  {
+    "url": "https://i.ibb.co/6s4zxjy/junior-grey.jpg",
+    "title": "Junior grey bike",
+    "type": "modern",
+    "agegroup": "junior",
+    "price": 35
+  },
+
+  {
+    "url": "https://i.ibb.co/nmJRRL4/junior-blue-yellow.jpg",
+    "title": "Junior blue-yellow bike",
+    "type": "modern",
+    "agegroup": "junior",
+    "price": 35
+  },
+
+  {
+    "url": "https://i.ibb.co/qn4krfs/electric-yellow.jpg",
+    "title": "Electric yellow bike",
+    "type": "electric",
+    "agegroup": "adult",
+    "price": 120
+  },
+
+  {
+    "url": "https://i.ibb.co/ssmkpY6/electric-green.jpg",
+    "title": "Electric green bike",
+    "type": "electric",
+    "agegroup": "adult",
+    "price": 120
+  },
+
+  {
+    "url": "https://i.ibb.co/hsH0PRL/Retro-light-blue.jpg",
+    "title": "Retro light-blue bike",
+    "type": "retro",
+    "agegroup": "adult",
+    "price": 40
+  },
+
+  {
+    "url": "https://i.ibb.co/prkNP34/mountaint-green.jpg",
+    "title": "Mountain green bike",
+    "type": "mountain",
+    "agegroup": "adult",
+    "price": 65
+  }
+]
