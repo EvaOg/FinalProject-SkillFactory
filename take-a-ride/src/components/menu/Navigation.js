@@ -180,6 +180,8 @@ function Navigation() {
 
       {isLogInVisible ? (
         <PopupLogin
+          isAuthoFill
+          isLogInVisible
           openSignUp={() => {
             setLogInVisible(!isLogInVisible);
             setSignUpVisible(!isSignUpVisible);

@@ -1,9 +1,15 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import UserContext from "../UserContext";
+import AuthorisationBanner from "../forUsers/AuthorisationBanner";
 
-function PopupLogin({ closeWindow, openSignUp }) {
+function PopupLogin({ closeWindow, openSignUp, isLogInVisible }) {
+  const [isAuthorisationBanner, setAuthorisationBanner] =
+    useState(isLogInVisible);
   const { setUserHandler } = useContext(UserContext);
+
+  console.log(isLogInVisible);
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -30,6 +36,25 @@ function PopupLogin({ closeWindow, openSignUp }) {
         alert("Email or password is incorrect. Try again");
       });
   };
+
+  function autoFill() {
+    setAuthorisationBanner(!isAuthorisationBanner);
+
+    axios
+      .post("https://sf-final-project-be.herokuapp.com/api/auth/sign_in", {
+        email: "jack@black.com",
+        password: "123456",
+      })
+      .then((response) => {
+        console.log(response);
+        setUserHandler(response.data.data.user, response.data.data.token);
+        closeWindow();
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Email or password is incorrect. Try again");
+      });
+  }
 
   return (
     <div className="popup-main-container">
@@ -84,6 +109,16 @@ function PopupLogin({ closeWindow, openSignUp }) {
           </button>
         </form>
       </div>
+      {isAuthorisationBanner ? (
+        <AuthorisationBanner
+          autoFill={() => autoFill()}
+          closeWindow={() => {
+            setAuthorisationBanner(!isAuthorisationBanner);
+          }}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }

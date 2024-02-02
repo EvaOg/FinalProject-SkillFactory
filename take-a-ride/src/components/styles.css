@@ -139,6 +139,21 @@
   margin-left: 10px;
 }
 
+#auto-login-popup {
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+}
+
+#auto-login-popup-btn {
+  width: 80px;
+  margin: auto;
+}
+
+.auto-login-banner-text {
+  margin: 20px 0;
+}
+
 .popup-close-icon {
   fill: white !important;
   position: absolute;
