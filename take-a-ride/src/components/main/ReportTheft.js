@@ -136,7 +136,7 @@ function ReportTheft({ closeWindow }) {
                   required
                 >
                   <option value="">Type of bike</option>
-                  <option value="Retro">Retro</option>
+                  <option value="Sport">Sport</option>
                   <option value="Modern Adult">Modern Adult</option>
                   <option value="Modern Junior">Modern Junior</option>
                   <option value="Mountain">Mountain</option>
